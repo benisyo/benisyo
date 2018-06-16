@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "map": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "__bit_reference": "cpp",
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "complex": "cpp",
+        "valarray": "cpp",
+        "random": "cpp"
+    }
+}
