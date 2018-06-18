@@ -19,6 +19,8 @@
         "stack": "cpp",
         "complex": "cpp",
         "valarray": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp"
     }
 }
