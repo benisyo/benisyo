@@ -20,7 +20,7 @@ int main(){
 
     string s;
     cin >> s;
-    cout << s.at(0) << endl;
+    cout << s << endl;
 
     return 0;
 }
