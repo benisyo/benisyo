@@ -14,21 +14,14 @@ bool done[1000];
 
 long long fib_memo(int n){
 
-    if (!done[n-1] && !done[n-2]) {
-        memo[n-1] = fib_memo(n-1);
-        done[n-1] = true;
-        memo[n-2] = fib_memo(n-2);
-        done[n-2] = true;        
-    }
-    else if(done[n-1] && !done[n-2]) {
-        memo[n-2] = fib_memo(n-2);
-        done[n-2] = true;
-    }
-    else if(!done[n-1] && done[n-2]) {
-        memo[n-1] = fib_memo(n-1);
-        done[n-1] = true;
-    }
-    return (memo[n-1] + memo[n-2]);
+    if (n == 0) return 0;
+    if (n == 0) return 1;
+
+    if (done[n]) return memo[n];
+
+    done[n] = true;
+    return memo[n] = fib_memo(n - 1) + fib_memo(n - 2);
+
 }
 
 long long fib_re(int n){
@@ -47,11 +40,11 @@ int main(){
     done[1] = true;
 //    clock_t start = clock();
 //    clock_t end;
-    cout << fib_re(50) << endl;
+    cout << fib_re(14) << endl;
 //    end = clock();
 //    cout << (double)(end - start) / CLOCKS_PER_SEC << endl;
 //    start = clock();
-    cout << fib_memo(100) << endl;
+    cout << fib_memo(14) << endl;
 //    end = clock();
 //    cout << (double)(end - start) /CLOCKS_PER_SEC << endl;
     return 0;

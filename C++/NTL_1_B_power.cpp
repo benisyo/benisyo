@@ -2,7 +2,7 @@
 using namespace std;
 typedef unsigned long long ullong;
 
-const ullong pnum = 1000000007;
+const ullong MOD = 1000000007;
 
 //繰り返し自乗法
 ullong power(ullong x, ullong n, ullong M){
@@ -20,7 +20,7 @@ int main(){
     int m, n;
     cin >> m >> n;
 
-    cout << power(m, n, pnum) << endl;
+    cout << power(m, n, MOD) << endl;
 
     return 0;
 }
